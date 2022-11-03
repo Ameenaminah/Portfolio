@@ -18,25 +18,25 @@ function Footer() {
           <FontAwesomeIcon icon={faTwitterSquare} size="2x" />
         </a>
         <a
-          href="https://twitter.com/_AmeenAminat?t=A-9q_CEj0pdudquZLWLE7A&s=09"
+          href="https://facebook.com"
           target="_blank"
         >
           <FontAwesomeIcon icon={faFacebookSquare} size="2x" />
         </a>
         <a
-          href="https://twitter.com/_AmeenAminat?t=A-9q_CEj0pdudquZLWLE7A&s=09"
+          href="https://instagram.com"
           target="_blank"
         >
           <FontAwesomeIcon icon={faInstagramSquare} size="2x" />
         </a>
         <a
-          href="https://twitter.com/_AmeenAminat?t=A-9q_CEj0pdudquZLWLE7A&s=09"
+          href="https://github.com/Ameenaminah"
           target="_blank"
         >
           <FontAwesomeIcon icon={faGithubSquare} size="2x" />
         </a>
         <a
-          href="https://twitter.com/_AmeenAminat?t=A-9q_CEj0pdudquZLWLE7A&s=09"
+          href="https://wa.me/+2348162499299"
           target="_blank"
         >
           <FontAwesomeIcon icon={faWhatsappSquare} size="2x" />
