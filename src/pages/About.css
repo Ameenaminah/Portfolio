@@ -1,33 +1,27 @@
 
-/* section {
-  width: 100%;
-  min-height: 100vh;
-  padding: 10rem 9% 2rem;
-  position: relative;
-} */
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3em;
   background-color: var(--second-bg-color);
 }
 .about-img img {
   width: 35vw;
 }
-.heading {
+.about-heading{
   text-align: center;
   font-size: 4.5rem;
 }
-.about-content h2 {
-  text-align: center;
+.about-content h2  {
+  text-align: left;
   line-height: 1.2;
 }
-
-.about-content h2 {
-  font-size: 2.6rem;
+.about-content h3{
+  font-size: 2.6em;
 }
+
 .about-content p {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }

@@ -12,22 +12,19 @@ import {
 
 const Hero = () => {
   return (
-    <section className="hero home">
-      <div className="mask">
-        <img src={HeroImg} alt="" className="into-img" />
-      </div>
-
+    <section className="hero">
       <div className="hero-content">
-        <h3>Hello, It's Me</h3>
+        <span className="hero-intro">Hi, my name is</span>
         <h1>Aminat Ameen</h1>
         <h1>
           And I'm a <span>Frontend Developer</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-          corrupti corporis inventore error hic voluptates. Velit enim, ratione
-          amet possimus et voluptas minima adipisci quo quas reiciendis tempora
-          accusamus earum?
+          Aminat is a biochemistry graduate with a passion for technology and
+          healthcare. She is transitioning into frontend development and has a
+          keen interest in healthcare tech. With her unique background and drive
+          to learn, she believes she can make a valuable contribution to any
+          team.
         </p>
 
         <div className="social-media">
@@ -45,7 +42,7 @@ const Hero = () => {
           </a>
         </div>
         <a href="#" className="btn">
-          Download CV{" "}
+          Download CV
         </a>
 
         {/* <Link to="/project" className="btn">

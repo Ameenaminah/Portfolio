@@ -7,8 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 9%;
-  /* height: 90px; */
+  padding: 2em 9%;
   z-index: 100;
 }
 
@@ -26,27 +25,12 @@
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
-  margin-left: 4rem;
-}
-
-.navbar a {
-  font-size: 1.7rem;
-  color: var(--text-color);
-  margin-left: 4rem;
-  /* font-weight: 500; */
+  margin-left: 2.5em;
 }
 .navbar a:hover,
 .navbar a.activee {
   color: var(--main-color);
 }
-
-.nav-menu {
-  display: flex;
-}
-
-/* .nav-menu li {
-  padding: 0 1rem;
-} */
 
 .hamburger {
   display: none;

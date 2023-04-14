@@ -35,18 +35,17 @@ const Navbar = () => {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        Portfolio.
+        Portfo<span>lio.</span>
       </Link>
       {/* className={click ? "nav-menu active" : "nav-menu"} */}
       <nav className={click ? 'navbar active' : 'navbar'}>
-        <Link to="/home" className="activee">
+        <Link to="/" className="activee">
           Home
         </Link>
         <Link to="/about">About</Link>
-        <Link to="/project">Blog</Link>
-        <Link to="/project">Project</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/project">Projects</Link>
         <Link to="/contact">Contact</Link>
-        {/* <Link></Link> */}
       </nav>
 
       <div className="hamburger" onClick={handleClick}>
