@@ -1,32 +1,39 @@
-.portfolio {
-  background: var(--main-bg-color);
+
+.project {
+  background: var(--second-bg-color);
+  background-image: url("../assets/hero4.jpg");
+  background-color: var(--second-bg-color);
+   padding: 5em 8% 3em;
 }
 
-.portfolio h2 {
-  margin-bottom: 4rem;
+.project h2 {
+  margin-top: 1.5em;
+  font-size: 3.5rem;
+  margin-bottom: 1.5em;
+  text-align: center;
 }
-.portfolio-container {
+.project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 2.5em;
 }
-.portfolio-container .portfolio-box {
+.project-container .project-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
 }
-.portfolio-box img {
+.project-box img {
   width: 100%;
   transition: 0.5s ease;
 }
-.portfolio-box:hover img {
+.project-box:hover img {
   transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer {
+.project-box .project-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -38,24 +45,24 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 4rem;
+  padding: 0 5em;
   transform: translateY(100%);
   transition: 0.5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.project-box:hover .project-layer {
   transform: translateY(0%);
 }
 
-.portfolio-layer h4 {
+.project-layer h4 {
   font-size: 3rem;
 }
-.portfolio-layer h4 {
+.project-layer h4 {
   font-size: 1.6rem;
-  margin: 0.3rem 0 1rem;
+  margin: 0.2em 0 1em;
 }
 
-.portfolio-layer a {
+.project-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +70,9 @@
   height: 5rem;
   border-radius: 50%;
   background: var(--text-color);
+  cursor: pointer;
+  margin-top: 0.5em;
 }
-.portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--second-bg-color);
+.project-layer a:hover{
+  box-shadow: 0 0 1rem var(--bg-color);
 }

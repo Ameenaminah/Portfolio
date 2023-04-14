@@ -37,7 +37,6 @@ const Navbar = () => {
       <Link to="/" className="logo">
         Portfo<span>lio.</span>
       </Link>
-      {/* className={click ? "nav-menu active" : "nav-menu"} */}
       <nav className={click ? 'navbar active' : 'navbar'}>
         <Link to="/" className="activee">
           Home

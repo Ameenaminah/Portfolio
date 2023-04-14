@@ -7,9 +7,9 @@ import data from "../data";
 
 const Project = () => {
   const projectElements = data.map((project) => (
-    <div className="portfolio-box" key={project.id}>
+    <div className="project-box" key={project.id}>
       <img src={project.image} alt="" />
-      <div className="portfolio-layer">
+      <div className="project-layer">
         <h4>{project.name}</h4>
         <p>{project.description}</p>
         <a href="#">
@@ -23,12 +23,12 @@ const Project = () => {
   ));
 
   return (
-    <section className="portfolio">
+    <section className="project">
       <h2 className="heading">
         Latest <span>Projects</span>
       </h2>
 
-      <div className="portfolio-container">{projectElements}</div>
+      <div className="project-container">{projectElements}</div>
     </section>
   );
 };

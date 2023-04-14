@@ -3,6 +3,7 @@ import HeroImg from "../assets/intro-bg.jpeg";
 import { Link } from "react-router-dom";
 import {
   FaBars,
+  FaGithub,
   FaInstagram,
   FaLinkedin,
   FaTimes,
@@ -28,20 +29,27 @@ const Hero = () => {
         </p>
 
         <div className="social-media">
-          <a href="#">
-            <FaLinkedin size={20} style={{ color: "var(--main-color)f" }} />
+          <a href="https://github.com/Ameenaminah" target="_blank">
+            <FaGithub size={20} style={{ color: "var(--main-color)f" }} />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/ameenaminat/" target="_blank">
+            <FaLinkedin size={20} style={{ color: "var(--main-color)" }} />
+          </a>
+          <a
+            href="https://twitter.com/_AmeenAminat?t=Xeb6d7QXiHI2kNbGCQKWyw&s=03"
+            target="_blank"
+          >
             <FaTwitter size={20} style={{ color: "var(--main-color)" }} />
           </a>
-          <a href="#">
-            <FaWhatsapp size={20} style={{ color: "var(--main-color)" }} />
-          </a>
-          <a href="#">
+          <a href="#" target="_blank">
             <FaInstagram size={20} style={{ color: "var(--main-color)" }} />
           </a>
         </div>
-        <a href="#" className="btn">
+        <a
+          href="https://drive.google.com/file/d/1XAvoG98PQYi6OLiwnqNVyRGOCJkzrmp9/view?usp=sharing"
+          target="_blank"
+          className="btn"
+        >
           Download CV
         </a>
 

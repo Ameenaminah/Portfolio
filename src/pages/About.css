@@ -5,6 +5,7 @@
   align-items: center;
   gap: 3em;
   background-color: var(--second-bg-color);
+  background-image: url("../assets/hero6.jpg");
 }
 .about-img img {
   width: 35vw;
@@ -18,10 +19,10 @@
   line-height: 1.2;
 }
 .about-content h3{
-  font-size: 2.6em;
+  font-size: 2.6rem;
 }
 
 .about-content p {
   font-size: 1.6rem;
-  margin: 2rem 0 3rem;
+  margin: 1.5em 0 1.5rem;
 }

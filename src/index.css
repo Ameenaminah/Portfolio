@@ -6,9 +6,9 @@
   font-family: "Outfit", sans-serif;
 
   text-decoration: none;
-  border: none;
+  /* border: none;
   outline: none;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; */
 }
 :root {
   --bg-color: #1f242d;
@@ -42,12 +42,18 @@ section {
   width: 100%;
   min-height: 100vh;
   padding: 5em 9% 2em;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
 }
 
 .blog {
   color: #0ef;
-  font-size: 6rem;
+  font-size: 4rem;
   padding: 3em;
+  text-align: center;
 }
 
 .btn {
@@ -61,6 +67,7 @@ section {
   font-weight: 600;
   transition: 0.5s ease;
   border-radius: 4em;
+  cursor: pointer;
 }
 .btn:hover {
   box-shadow: none;
@@ -80,9 +87,12 @@ section {
     padding: 10rem 5% 2rem;
   }
   .footer {
-    padding: 2rem 3%;
+    padding: 1em 3.5em;
   }
-  .portfolio {
+  .footer-text p {
+    font-size: 1.2rem;
+  }
+  .project {
     padding-bottom: 7rem;
   }
   .contact {
@@ -133,18 +143,18 @@ section {
     width: 70vw;
     margin-top: 3em;
   }
-  .portfolio {
+  .project {
     padding-bottom: 7rem;
   }
-  .portfolio h2 {
+  .project h2 {
     margin-bottom: 3rem;
   }
-  .portfolio-container {
+  .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 617px) {
-  .portfolio-container {
+  .project-container {
     grid-template-columns: 1fr;
   }
 }
