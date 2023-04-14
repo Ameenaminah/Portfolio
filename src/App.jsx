@@ -1,17 +1,25 @@
-import Info from "./Info";
-import About from "./About";
-import Interests from "./Interests";
-import Footer from "./Footer";
-import "./index.css";
+// import './App.css'
+// import Navbar from "./component/Nav";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
+import { Routes, Route, Link } from "react-router-dom";
+import Layout from "./component/Layout";
 
-export default function App() {
+function App() {
   return (
-    <main>
-      <div className="info--img"></div>
-      <Info />
-      <About />
-      <Interests />
-      <Footer />
-    </main>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
+
+export default App;
