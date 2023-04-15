@@ -6,49 +6,37 @@ import "../pages/Portfolio.css";
 import "../pages/Contact.css";
 
 const Contact = () => {
-
-const [formData, setFormData] = useState({
-  fullName: "",
-  firstName: "",
-  lastName: "",
-  email: "",
-  mobileNumber: "",
-  message: "",
-  joinedNewsletter: true,
-  employment: "",
-  favColor: "",
-});
-
-function handleChange(event) {
-  const { name, value, type, checked } = event.target;
-  setFormData((prevFormData) => {
-    return {
-      ...prevFormData,
-      [name]: type === "checkbox" ? checked : value,
-    };
+  const [formData, setFormData] = useState({
+    fullName: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobileNumber: "",
+    subject: "",
+    message: "",
   });
-}
-function handleSubmit(event) {
-  event.preventDefault();
-  // submitToApi(formData)
-  if (formData.password === formData.passwordConfirm) {
-    console.log("Successfully signed up");
-  } else {
-    console.log("Passwords do not match");
-    return;
-  }
 
-  if (formData.joinedNewsletter) {
-    console.log("Thanks for signing up for our newsletter!");
+  const [thankYouMessage, setThankYouMessage] = useState("");
+
+  function handleChange(event) {
+    const { name, value, type, checked } = event.target;
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        [name]: type === "checkbox" ? checked : value,
+      };
+    });
   }
-}
 
   return (
     <section className="contact">
-      <h2 className="heading">
+      <h2>
         Contact <span>Me!</span>
       </h2>
-      <form action="">
+      <form
+        action="https://getform.io/f/a6ac45b2-9f36-4abd-a7a9-57f4b58b7508"
+        method="POST"
+      >
         <div className="input-box">
           <input
             type="text"
@@ -56,6 +44,7 @@ function handleSubmit(event) {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
+            required
           />
 
           <input
@@ -64,6 +53,7 @@ function handleSubmit(event) {
             onChange={handleChange}
             name="email"
             value={formData.email}
+            required
           />
         </div>
         <div className="input-box">
@@ -73,13 +63,15 @@ function handleSubmit(event) {
             name="mobileNumber"
             value={formData.mobileNumber}
             onChange={handleChange}
+            required
           />
           <input
             type="text"
             placeholder="Email Subject"
-            name="firstName"
-            value={formData.firstName}
+            name="subject"
+            value={formData.subject}
             onChange={handleChange}
+            required
           />
         </div>
 
@@ -88,10 +80,11 @@ function handleSubmit(event) {
           placeholder="Your Message"
           onChange={handleChange}
           name="message"
-          cols='30'
-          rows='10'
+          cols="30"
+          rows="10"
+          required
         />
-        <input type="submit" className="btn" value='Send Message'/>
+        <input type="submit" className="btn" value="Send Message" />
       </form>
     </section>
   );

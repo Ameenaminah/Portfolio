@@ -104,22 +104,21 @@ section {
     display: initial;
   }
   .navbar {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
-    padding: 1rem 3%;
-    background: var(--bg-color);
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -3;
     transition: 0.3s;
-    display: none;
   }
   .navbar.active {
-    display: block;
+    left: 0;
   }
 
   .navbar a {

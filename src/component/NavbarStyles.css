@@ -9,12 +9,15 @@
   align-items: center;
   padding: 2em 9%;
   z-index: 100;
+  transition:  0.32s ease-in-out;
 }
 
-/* .header-bg {
-  background-color: rgba(0, 0, 0, 0.85);
+.header-bg {
+  /* background-color: rgba(0, 0, 0, 0.85);
   transition: 0.5s;
-} */
+  background-color: #121212; */
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+}
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
@@ -30,6 +33,9 @@
 .navbar a:hover,
 .navbar a.activee {
   color: var(--main-color);
+}
+.unactive {
+  color: var(--text-color);
 }
 
 .hamburger {

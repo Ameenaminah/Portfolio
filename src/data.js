@@ -1,5 +1,5 @@
 // import './assets'
-export default [
+const projects = [
   {
     id: 1,
     name: "Web Design",
@@ -43,3 +43,32 @@ export default [
     image: "./assets/hero1.jpg",
   },
 ];
+
+const links = [
+  {
+    id: 1,
+    link: "Home",
+    to: "/",
+  },
+  {
+    id: 2,
+    link: "About",
+    to: "/about",
+  },
+  {
+    id: 3,
+    link: "Blog",
+    to: "/blog",
+  },
+  {
+    id: 4,
+    link: "Projects",
+    to: "/project",
+  },
+  {
+    id: 5,
+    link: "Contact",
+    to: "/contact",
+  },
+];
+export {links, projects}

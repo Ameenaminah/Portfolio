@@ -1,50 +1,47 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../component/NavbarStyles.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { links } from "../data";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY >= 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onUpdateActiveLink = (value) => {
+    setLink(value);
+  };
   const handleClick = () => setClick(!click);
-
-  // const [color, setColor] = useState(false);
-
-  // const changeColor = () => {
-  //   if (window.scrollY >= 100) {
-  //     setColor(true);
-  //   } else {
-  //     setColor(false);
-  //   }
-  // };
-  // window.addEventListener("scroll", changeColor);
-
-  // useEffect(() => {
-  //   const changeColor = () => {
-  //     if (window.scrollY >= 100) {
-  //       setColor(true);
-  //     } else {
-  //       setColor(false);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", changeColor);
-  //   return () => window.removeEventListener("scroll", changeColor);
-  // }, []);
-
-  // className={color ? "header header-bg" : "header"}
-
   return (
-    <header className="header">
+    <header className={scrolled ? "header header-bg" : "header"}>
       <Link to="/" className="logo">
         Portfo<span>lio.</span>
       </Link>
-      <nav className={click ? 'navbar active' : 'navbar'}>
-        <Link to="/" className="activee">
-          Home
-        </Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/project">Projects</Link>
-        <Link to="/contact">Contact</Link>
+      <nav className={click ? "navbar active" : "navbar"}>
+        {links.map(({ id, link, to }) => (
+          <NavLink
+            to={to}
+            key={id}
+            onClick={handleClick}
+            className={({ isActive }) => (isActive ? "activee" : "unactive")}
+          >
+            {link}
+          </NavLink>
+        ))}
       </nav>
 
       <div className="hamburger" onClick={handleClick}>

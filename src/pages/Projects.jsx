@@ -3,7 +3,7 @@ import "../pages/About.css";
 import "../component/Hero.css";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import "../pages/Portfolio.css";
-import data from "../data";
+import {projects as data} from "../data";
 
 const Project = () => {
   const projectElements = data.map((project) => (
