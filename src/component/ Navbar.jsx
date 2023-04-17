@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY >= 50) {
+      if (window.scrollY > 100) {
         setScrolled(true);
       } else {
         setScrolled(false);

@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import {
   FaBars,
   FaGithub,
+  
   FaInstagram,
   FaLinkedin,
   FaTimes,
   FaTwitter,
-  FaWhatsapp,
+  FaEnvelope,
 } from "react-icons/fa";
 
 const Hero = () => {
@@ -41,24 +42,18 @@ const Hero = () => {
           >
             <FaTwitter size={20} style={{ color: "var(--main-color)" }} />
           </a>
-          <a href="#" target="_blank">
-            <FaInstagram size={20} style={{ color: "var(--main-color)" }} />
+          <a href="mailto:ameenaminatmorounmubo@gmail.com" target="_blank">
+            <FaEnvelope size={20} style={{ color: "var(--main-color)" }} />
           </a>
         </div>
         <a
-          href="https://drive.google.com/file/d/1XAvoG98PQYi6OLiwnqNVyRGOCJkzrmp9/view?usp=sharing"
+          href="/resume.pdf"
           target="_blank"
           className="btn"
+          download="Aminat Ameen CV"
         >
           Download CV
         </a>
-
-        {/* <Link to="/project" className="btn">
-            Projects
-          </Link>
-          <Link to="/contact" className="btn btn-light">
-            Contact
-          </Link> */}
       </div>
     </section>
   );

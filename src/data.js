@@ -71,4 +71,5 @@ const links = [
     to: "/contact",
   },
 ];
-export {links, projects}
+
+export { links, projects };
