@@ -21,10 +21,10 @@ function App() {
 
     ScrollReveal().reveal(".hero-content, .heading", { origin: "top" });
     ScrollReveal().reveal(".contact form, .project-box", { origin: "bottom" });
-    ScrollReveal().reveal(".my-name, .about-img", { origin: "left" });
-    ScrollReveal().reveal(".hero-content p, .about-content", {
-      origin: "right",
-    });
+    // ScrollReveal().reveal(".my-name, .about-img", { origin: "left" });
+    // ScrollReveal().reveal(".hero-content p, .about-content", {
+    //   origin: "right",
+    // });
   }, []);
 
   return (

@@ -168,11 +168,20 @@ section {
 }
 @media (max-width: 365px) {
   html {
-    font-size: 36%;
+    font-size: 40%;
   }
+  .hero-content {
+  max-width: 90%;
+}
   .about-img img {
     width: 90vw;
   }
+
+  .social-media a {
+    width: 5rem;
+    height: 5rem;
+  }
+
   .footer {
     flex-direction: column-reverse;
   }
