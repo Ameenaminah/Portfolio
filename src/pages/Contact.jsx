@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <h2>
+      <h2 className="heading">
         Contact <span>Me!</span>
       </h2>
       <form

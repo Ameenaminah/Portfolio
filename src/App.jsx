@@ -7,8 +7,26 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import { Routes, Route, Link } from "react-router-dom";
 import Layout from "./component/Layout";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      duration: 3000,
+      delay: 200,
+      distance: "50px",
+    });
+
+    ScrollReveal().reveal(".hero-content, .heading", { origin: "top" });
+    ScrollReveal().reveal(".contact form, .project-box", { origin: "bottom" });
+    ScrollReveal().reveal(".my-name, .about-img", { origin: "left" });
+    ScrollReveal().reveal(".hero-content p, .about-content", {
+      origin: "right",
+    });
+  }, []);
+
   return (
     <>
       <Routes>

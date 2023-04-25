@@ -1,10 +1,12 @@
 import "../component/Hero.css";
 import HeroImg from "../assets/intro-bg.jpeg";
 import { Link } from "react-router-dom";
+
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 import {
   FaBars,
   FaGithub,
-  
   FaInstagram,
   FaLinkedin,
   FaTimes,
@@ -13,13 +15,32 @@ import {
 } from "react-icons/fa";
 
 const Hero = () => {
+  
+
+  // const el = useRef(null);
+useEffect(() => {
+  const typed = new Typed(".multiple-text", {
+    strings: ["Frontend Developer", "Biochemist", "Writer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+  });
+
+  return () => {
+    // Destroy Typed instance during cleanup to stop animation
+    typed.destroy();
+  };
+}, []);
+
+
   return (
     <section className="hero">
       <div className="hero-content">
         <span className="hero-intro">Hi, my name is</span>
-        <h1>Aminat Ameen</h1>
+        <h1 className="my-name">Aminat Ameen</h1>
         <h1>
-          And I'm a <span>Frontend Developer</span>
+          And I'm a <span className="multiple-text"></span>
         </h1>
         <p>
           Aminat is a biochemistry graduate with a passion for technology and
