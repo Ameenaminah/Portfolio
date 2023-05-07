@@ -5,12 +5,18 @@ import About from "./pages/About";
 import Project from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./component/Layout";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   useEffect(() => {
     ScrollReveal({
       reset: true,
@@ -31,11 +37,11 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route index element={<Home />} />
+          <Route path="project" element={<Project />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </>

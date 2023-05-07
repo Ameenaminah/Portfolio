@@ -7,18 +7,29 @@
 
   text-decoration: none;
   /* border: none;
-  outline: none;
-  scroll-behavior: smooth; */
+  outline: none; */
 }
+
 :root {
   --bg-color: #1f242d;
   --second-bg-color: #323946;
   --text-color: #fff;
   --main-color: #0ef;
 }
+
+/* body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   background: var(--bg-color);
@@ -171,8 +182,8 @@ section {
     font-size: 40%;
   }
   .hero-content {
-  max-width: 90%;
-}
+    max-width: 90%;
+  }
   .about-img img {
     width: 90vw;
   }

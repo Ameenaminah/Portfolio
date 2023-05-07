@@ -48,27 +48,27 @@ const links = [
   {
     id: 1,
     link: "Home",
-    to: "/",
+    to: ".",
   },
   {
     id: 2,
     link: "About",
-    to: "/about",
+    to: "about",
   },
   {
     id: 3,
     link: "Blog",
-    to: "/blog",
+    to: "blog",
   },
   {
     id: 4,
     link: "Projects",
-    to: "/project",
+    to: "project",
   },
   {
     id: 5,
     link: "Contact",
-    to: "/contact",
+    to: "contact",
   },
 ];
 

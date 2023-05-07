@@ -3,7 +3,7 @@ import HeroImg from "../assets/intro-bg.jpeg";
 import { Link } from "react-router-dom";
 
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import {
   FaBars,
   FaGithub,
@@ -15,27 +15,24 @@ import {
 } from "react-icons/fa";
 
 const Hero = () => {
-  
-
   // const el = useRef(null);
-useEffect(() => {
-  const typed = new Typed(".multiple-text", {
-    strings: ["Frontend Developer", "Biochemist", "Writer"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true,
-  });
+  useEffect(() => {
+    const typed = new Typed(".multiple-text", {
+      strings: ["Frontend Developer", "Biochemist", "Writer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
 
-  return () => {
-    // Destroy Typed instance during cleanup to stop animation
-    typed.destroy();
-  };
-}, []);
-
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-content">
         <span className="hero-intro">Hi, my name is</span>
         <h1 className="my-name">Aminat Ameen</h1>

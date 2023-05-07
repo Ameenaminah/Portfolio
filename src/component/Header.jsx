@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { links } from "../data";
 
-const Navbar = () => {
+const Header = () => {
   const [click, setClick] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -55,4 +55,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
