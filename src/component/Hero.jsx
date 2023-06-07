@@ -1,5 +1,5 @@
 import "../component/Hero.css";
-import HeroImg from "../assets/intro-bg.jpeg";
+import HeroImg from "../assets/images/intro-bg.jpeg";
 import { Link } from "react-router-dom";
 
 import Typed from "typed.js";

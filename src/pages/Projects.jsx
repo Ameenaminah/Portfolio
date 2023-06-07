@@ -3,7 +3,7 @@ import "../pages/About.css";
 import "../component/Hero.css";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import "../pages/Portfolio.css";
-import {projects as data} from "../data";
+import { projects as data } from "../data";
 
 const Project = () => {
   const projectElements = data.map((project) => (
@@ -12,7 +12,7 @@ const Project = () => {
       <div className="project-layer">
         <h4>{project.name}</h4>
         <p>{project.description}</p>
-        <a href="#">
+        <a href={project.href} target="_blank">
           <FaExternalLinkSquareAlt
             size={20}
             style={{ color: "var(--second-bg-color)" }}

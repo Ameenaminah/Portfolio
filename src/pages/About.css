@@ -5,7 +5,7 @@
   align-items: center;
   gap: 3em;
   background-color: var(--second-bg-color);
-  background-image: url("../assets/hero6.jpg");
+  background-image: url("../assets/images/hero6.jpg");
 }
 .about-img img {
   width: 35vw;

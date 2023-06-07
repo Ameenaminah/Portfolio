@@ -1,4 +1,4 @@
-import HeroImg from "../assets/mypix.jpg";
+import HeroImg from "../assets/images/mypix.jpg";
 import "../pages/About.css";
 import "../component/Hero.css";
 const About = () => {
@@ -7,7 +7,6 @@ const About = () => {
       <div className="about-img">
         <img src={HeroImg} alt="" />
       </div>
-
       <div className="about-content">
         <h2 className="about-heading heading">
           About <span>Me</span>

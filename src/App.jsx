@@ -10,6 +10,7 @@ import Layout from "./component/Layout";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 
+
 function App() {
   const { pathname } = useLocation();
 

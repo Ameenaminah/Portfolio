@@ -1,5 +1,5 @@
 import { useState } from "react";
-import HeroImg from "../assets/intro-bg.jpeg";
+import HeroImg from "../assets/images/intro-bg.jpeg";
 import "../pages/About.css";
 import "../component/Hero.css";
 import "../pages/Portfolio.css";
