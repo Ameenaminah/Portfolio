@@ -18,7 +18,7 @@ const Hero = () => {
   // const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(".multiple-text", {
-      strings: ["Frontend Developer", "Biochemist", "Writer"],
+      strings: ["Software Developer", "Biochemist", "Writer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
