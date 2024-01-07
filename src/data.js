@@ -18,25 +18,27 @@ const projects = [
   },
   {
     id: 3,
-    name: "Web Design",
+    name: "Converter",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa perspiciatis hic quisquam ipsa quia voluptate provident fugit. Adipisci quos quia, dolore ab modi non quo repudiandae soluta quaerat sed.",
     image: "./assets/images/converter.png",
-    href: " https://aconverter.netlify.app",
+    href: "https://aconverter.netlify.app",
   },
   {
     id: 4,
-    name: "Web Design",
+    name: "FoodApp",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa perspiciatis hic quisquam ipsa quia voluptate provident fugit. Adipisci quos quia, dolore ab modi non quo repudiandae soluta quaerat sed.",
-    image: "./assets/images/intro-bg.jpeg",
+      "FoodApp is a web application that serves as your ultimate food discovery platform. It allows you to explore a wide variety of foods categorized by different types, and you can filter these foods based on their categories. Built with ReactJs, JavaScript, HTML, CSS, and Vite",
+    image: "./assets/images/hero1.jpg",
+    href: "https://aminatfoodapp.netlify.app",
   },
   {
     id: 5,
-    name: "Web Design",
+    name: "Scissorapp",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa perspiciatis hic quisquam ipsa quia voluptate provident fugit. Adipisci quos quia, dolore ab modi non quo repudiandae soluta quaerat sed.",
     image: "./assets/images/hero1.jpg",
+    href: "https://aminatscissorapp.netlify.app",
   },
   {
     id: 6,
