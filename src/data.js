@@ -40,13 +40,13 @@ const projects = [
     image: "./assets/images/hero1.jpg",
     href: "https://aminatscissorapp.netlify.app",
   },
-  {
-    id: 6,
-    name: "Web Design",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa perspiciatis hic quisquam ipsa quia voluptate provident fugit. Adipisci quos quia, dolore ab modi non quo repudiandae soluta quaerat sed.",
-    image: "./assets/images/hero1.jpg",
-  },
+  // {
+  //   id: 6,
+  //   name: "Web Design",
+  //   description:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa perspiciatis hic quisquam ipsa quia voluptate provident fugit. Adipisci quos quia, dolore ab modi non quo repudiandae soluta quaerat sed.",
+  //   image: "./assets/images/hero1.jpg",
+  // },
 ];
 
 const links = [
@@ -60,11 +60,11 @@ const links = [
     link: "About",
     to: "about",
   },
-  {
-    id: 3,
-    link: "Blog",
-    to: "blog",
-  },
+  // {
+  //   id: 3,
+  //   link: "Blog",
+  //   to: "blog",
+  // },
   {
     id: 4,
     link: "Projects",
